@@ -11,6 +11,8 @@
 		AD736E412C05BCFF00793F09 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD736E402C05BCFF00793F09 /* ContentView.swift */; };
 		AD736E432C05BD0200793F09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD736E422C05BD0200793F09 /* Assets.xcassets */; };
 		AD736E462C05BD0200793F09 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD736E452C05BD0200793F09 /* Preview Assets.xcassets */; };
+		AD736E4E2C05BE5400793F09 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = AD736E4D2C05BE5400793F09 /* ComposableArchitecture */; };
+		AD736E562C05C08200793F09 /* CounterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD736E552C05C08200793F09 /* CounterFeature.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,7 @@
 		AD736E402C05BCFF00793F09 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AD736E422C05BD0200793F09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD736E452C05BD0200793F09 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AD736E552C05C08200793F09 /* CounterFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD736E4E2C05BE5400793F09 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +59,7 @@
 				AD736E402C05BCFF00793F09 /* ContentView.swift */,
 				AD736E422C05BD0200793F09 /* Assets.xcassets */,
 				AD736E442C05BD0200793F09 /* Preview Content */,
+				AD736E552C05C08200793F09 /* CounterFeature.swift */,
 			);
 			path = TCATestSample;
 			sourceTree = "<group>";
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = TCATestSample;
+			packageProductDependencies = (
+				AD736E4D2C05BE5400793F09 /* ComposableArchitecture */,
+			);
 			productName = TCATestSample;
 			productReference = AD736E3B2C05BCFF00793F09 /* TCATestSample.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = AD736E322C05BCFF00793F09;
+			packageReferences = (
+				AD736E4C2C05BE5400793F09 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = AD736E3C2C05BCFF00793F09 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD736E562C05C08200793F09 /* CounterFeature.swift in Sources */,
 				AD736E412C05BCFF00793F09 /* ContentView.swift in Sources */,
 				AD736E3F2C05BCFF00793F09 /* TCATestSampleApp.swift in Sources */,
 			);
@@ -344,6 +356,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AD736E4C2C05BE5400793F09 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.10.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AD736E4D2C05BE5400793F09 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD736E4C2C05BE5400793F09 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AD736E332C05BCFF00793F09 /* Project object */;
 }
