@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AD736E3F2C05BCFF00793F09 /* TCATestSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD736E3E2C05BCFF00793F09 /* TCATestSampleApp.swift */; };
-		AD736E412C05BCFF00793F09 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD736E402C05BCFF00793F09 /* ContentView.swift */; };
 		AD736E432C05BD0200793F09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD736E422C05BD0200793F09 /* Assets.xcassets */; };
 		AD736E462C05BD0200793F09 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD736E452C05BD0200793F09 /* Preview Assets.xcassets */; };
 		AD736E4E2C05BE5400793F09 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = AD736E4D2C05BE5400793F09 /* ComposableArchitecture */; };
@@ -18,7 +17,6 @@
 /* Begin PBXFileReference section */
 		AD736E3B2C05BCFF00793F09 /* TCATestSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCATestSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD736E3E2C05BCFF00793F09 /* TCATestSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCATestSampleApp.swift; sourceTree = "<group>"; };
-		AD736E402C05BCFF00793F09 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AD736E422C05BD0200793F09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD736E452C05BD0200793F09 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AD736E552C05C08200793F09 /* CounterFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeature.swift; sourceTree = "<group>"; };
@@ -56,7 +54,6 @@
 			isa = PBXGroup;
 			children = (
 				AD736E3E2C05BCFF00793F09 /* TCATestSampleApp.swift */,
-				AD736E402C05BCFF00793F09 /* ContentView.swift */,
 				AD736E422C05BD0200793F09 /* Assets.xcassets */,
 				AD736E442C05BD0200793F09 /* Preview Content */,
 				AD736E552C05C08200793F09 /* CounterFeature.swift */,
@@ -149,7 +146,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD736E562C05C08200793F09 /* CounterFeature.swift in Sources */,
-				AD736E412C05BCFF00793F09 /* ContentView.swift in Sources */,
 				AD736E3F2C05BCFF00793F09 /* TCATestSampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
