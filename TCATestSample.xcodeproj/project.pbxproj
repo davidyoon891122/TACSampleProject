@@ -17,6 +17,8 @@
 		AD736E6A2C06E61200793F09 /* NumberFactClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD736E692C06E61200793F09 /* NumberFactClient.swift */; };
 		AD736E6C2C06EB0900793F09 /* AppFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD736E6B2C06EB0900793F09 /* AppFeature.swift */; };
 		AD736E6E2C06F5DE00793F09 /* AppFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD736E6D2C06F5DE00793F09 /* AppFeatureTests.swift */; };
+		AD736E732C06FAA400793F09 /* ContactsFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD736E722C06FAA400793F09 /* ContactsFeature.swift */; };
+		AD736E772C06FCEC00793F09 /* AddContactFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD736E762C06FCEC00793F09 /* AddContactFeature.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		AD736E692C06E61200793F09 /* NumberFactClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFactClient.swift; sourceTree = "<group>"; };
 		AD736E6B2C06EB0900793F09 /* AppFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFeature.swift; sourceTree = "<group>"; };
 		AD736E6D2C06F5DE00793F09 /* AppFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFeatureTests.swift; sourceTree = "<group>"; };
+		AD736E722C06FAA400793F09 /* ContactsFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsFeature.swift; sourceTree = "<group>"; };
+		AD736E762C06FCEC00793F09 /* AddContactFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactFeature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,9 +92,8 @@
 				AD736E3E2C05BCFF00793F09 /* TCATestSampleApp.swift */,
 				AD736E422C05BD0200793F09 /* Assets.xcassets */,
 				AD736E442C05BD0200793F09 /* Preview Content */,
-				AD736E552C05C08200793F09 /* CounterFeature.swift */,
-				AD736E692C06E61200793F09 /* NumberFactClient.swift */,
-				AD736E6B2C06EB0900793F09 /* AppFeature.swift */,
+				AD736E712C06FA9400793F09 /* Counter */,
+				AD736E742C06FAA700793F09 /* Contacts */,
 			);
 			path = TCATestSample;
 			sourceTree = "<group>";
@@ -111,6 +114,49 @@
 				AD736E6D2C06F5DE00793F09 /* AppFeatureTests.swift */,
 			);
 			path = TCATestSampleTests;
+			sourceTree = "<group>";
+		};
+		AD736E6F2C06FA7500793F09 /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				AD736E552C05C08200793F09 /* CounterFeature.swift */,
+				AD736E6B2C06EB0900793F09 /* AppFeature.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		AD736E702C06FA8000793F09 /* Dependency */ = {
+			isa = PBXGroup;
+			children = (
+				AD736E692C06E61200793F09 /* NumberFactClient.swift */,
+			);
+			path = Dependency;
+			sourceTree = "<group>";
+		};
+		AD736E712C06FA9400793F09 /* Counter */ = {
+			isa = PBXGroup;
+			children = (
+				AD736E6F2C06FA7500793F09 /* Reducer */,
+				AD736E702C06FA8000793F09 /* Dependency */,
+			);
+			path = Counter;
+			sourceTree = "<group>";
+		};
+		AD736E742C06FAA700793F09 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				AD736E752C06FAAF00793F09 /* Reducer */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		AD736E752C06FAAF00793F09 /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				AD736E722C06FAA400793F09 /* ContactsFeature.swift */,
+				AD736E762C06FCEC00793F09 /* AddContactFeature.swift */,
+			);
+			path = Reducer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,9 +266,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD736E6C2C06EB0900793F09 /* AppFeature.swift in Sources */,
+				AD736E772C06FCEC00793F09 /* AddContactFeature.swift in Sources */,
 				AD736E6A2C06E61200793F09 /* NumberFactClient.swift in Sources */,
 				AD736E562C05C08200793F09 /* CounterFeature.swift in Sources */,
 				AD736E3F2C05BCFF00793F09 /* TCATestSampleApp.swift in Sources */,
+				AD736E732C06FAA400793F09 /* ContactsFeature.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
