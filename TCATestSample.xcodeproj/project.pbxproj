@@ -16,6 +16,7 @@
 		AD736E682C06BCE300793F09 /* CounterFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD736E672C06BCE300793F09 /* CounterFeatureTests.swift */; };
 		AD736E6A2C06E61200793F09 /* NumberFactClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD736E692C06E61200793F09 /* NumberFactClient.swift */; };
 		AD736E6C2C06EB0900793F09 /* AppFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD736E6B2C06EB0900793F09 /* AppFeature.swift */; };
+		AD736E6E2C06F5DE00793F09 /* AppFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD736E6D2C06F5DE00793F09 /* AppFeatureTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		AD736E672C06BCE300793F09 /* CounterFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeatureTests.swift; sourceTree = "<group>"; };
 		AD736E692C06E61200793F09 /* NumberFactClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFactClient.swift; sourceTree = "<group>"; };
 		AD736E6B2C06EB0900793F09 /* AppFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFeature.swift; sourceTree = "<group>"; };
+		AD736E6D2C06F5DE00793F09 /* AppFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFeatureTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			children = (
 				AD736E602C06BCD200793F09 /* TCATestSampleTests.swift */,
 				AD736E672C06BCE300793F09 /* CounterFeatureTests.swift */,
+				AD736E6D2C06F5DE00793F09 /* AppFeatureTests.swift */,
 			);
 			path = TCATestSampleTests;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			files = (
 				AD736E612C06BCD200793F09 /* TCATestSampleTests.swift in Sources */,
 				AD736E682C06BCE300793F09 /* CounterFeatureTests.swift in Sources */,
+				AD736E6E2C06F5DE00793F09 /* AppFeatureTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
