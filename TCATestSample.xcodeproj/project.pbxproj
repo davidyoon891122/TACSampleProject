@@ -14,6 +14,7 @@
 		AD736E562C05C08200793F09 /* CounterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD736E552C05C08200793F09 /* CounterFeature.swift */; };
 		AD736E612C06BCD200793F09 /* TCATestSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD736E602C06BCD200793F09 /* TCATestSampleTests.swift */; };
 		AD736E682C06BCE300793F09 /* CounterFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD736E672C06BCE300793F09 /* CounterFeatureTests.swift */; };
+		AD736E6A2C06E61200793F09 /* NumberFactClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD736E692C06E61200793F09 /* NumberFactClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		AD736E5E2C06BCD100793F09 /* TCATestSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCATestSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD736E602C06BCD200793F09 /* TCATestSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCATestSampleTests.swift; sourceTree = "<group>"; };
 		AD736E672C06BCE300793F09 /* CounterFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeatureTests.swift; sourceTree = "<group>"; };
+		AD736E692C06E61200793F09 /* NumberFactClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFactClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				AD736E422C05BD0200793F09 /* Assets.xcassets */,
 				AD736E442C05BD0200793F09 /* Preview Content */,
 				AD736E552C05C08200793F09 /* CounterFeature.swift */,
+				AD736E692C06E61200793F09 /* NumberFactClient.swift */,
 			);
 			path = TCATestSample;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD736E6A2C06E61200793F09 /* NumberFactClient.swift in Sources */,
 				AD736E562C05C08200793F09 /* CounterFeature.swift in Sources */,
 				AD736E3F2C05BCFF00793F09 /* TCATestSampleApp.swift in Sources */,
 			);
