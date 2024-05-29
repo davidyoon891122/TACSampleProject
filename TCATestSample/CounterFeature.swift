@@ -15,6 +15,7 @@ struct CounterFeature {
         var count = 0
         var fact: String?
         var isLoading = false
+        var isTimerRunning = false
     }
     
     enum Action {
@@ -22,6 +23,12 @@ struct CounterFeature {
         case incrementButtonTapped
         case factButtonTapped
         case factResponse(String)
+        case toggleTimerButtonTapped
+        case timerTick
+    }
+    
+    enum CancelID {
+        case timer
     }
     
     var body: some ReducerOf<Self> {
@@ -31,10 +38,12 @@ struct CounterFeature {
                 state.count -= 1
                 state.fact = nil
                 return .none
+                
             case .incrementButtonTapped:
                 state.count += 1
                 state.fact = nil
                 return .none
+                
             case .factButtonTapped:
                 state.fact = nil
                 state.isLoading = true
@@ -45,9 +54,30 @@ struct CounterFeature {
                     let fact = String(decoding: data, as: UTF8.self)
                     await send(.factResponse(fact))
                 }
+                
             case .factResponse(let fact):
                 state.fact = fact
                 state.isLoading = false
+                return .none
+                
+            case .toggleTimerButtonTapped:
+                state.isTimerRunning.toggle()
+                
+                if state.isTimerRunning {
+                    return .run { send in
+                        while true {
+                            try await Task.sleep(for: .seconds(1))
+                            await send(.timerTick)
+                        }
+                    }
+                    .cancellable(id: CancelID.timer)
+                } else {
+                    return .cancel(id: CancelID.timer)
+                }
+            case .timerTick:
+                state.count += 1
+                state.fact = nil
+                
                 return .none
             }
         }
@@ -83,6 +113,14 @@ struct CounterView: View {
             }
             Button("Fact") {
                 store.send(.factButtonTapped)
+            }
+            .font(.largeTitle)
+            .padding()
+            .background(.black.opacity(0.1))
+            .clipShape(.rect(cornerRadius: 10))
+            
+            Button(store.isTimerRunning ? "Stop timer" : "Start Tiemr") {
+                store.send(.toggleTimerButtonTapped)
             }
             .font(.largeTitle)
             .padding()
