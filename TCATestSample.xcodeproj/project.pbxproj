@@ -19,6 +19,7 @@
 		AD736E6E2C06F5DE00793F09 /* AppFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD736E6D2C06F5DE00793F09 /* AppFeatureTests.swift */; };
 		AD736E732C06FAA400793F09 /* ContactsFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD736E722C06FAA400793F09 /* ContactsFeature.swift */; };
 		AD736E772C06FCEC00793F09 /* AddContactFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD736E762C06FCEC00793F09 /* AddContactFeature.swift */; };
+		AD736E7A2C07218F00793F09 /* ContactsFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD736E792C07218F00793F09 /* ContactsFeatureTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		AD736E6D2C06F5DE00793F09 /* AppFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFeatureTests.swift; sourceTree = "<group>"; };
 		AD736E722C06FAA400793F09 /* ContactsFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsFeature.swift; sourceTree = "<group>"; };
 		AD736E762C06FCEC00793F09 /* AddContactFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactFeature.swift; sourceTree = "<group>"; };
+		AD736E792C07218F00793F09 /* ContactsFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsFeatureTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				AD736E602C06BCD200793F09 /* TCATestSampleTests.swift */,
-				AD736E672C06BCE300793F09 /* CounterFeatureTests.swift */,
-				AD736E6D2C06F5DE00793F09 /* AppFeatureTests.swift */,
+				AD736E782C07217F00793F09 /* Counter */,
+				AD736E792C07218F00793F09 /* ContactsFeatureTests.swift */,
 			);
 			path = TCATestSampleTests;
 			sourceTree = "<group>";
@@ -157,6 +159,15 @@
 				AD736E762C06FCEC00793F09 /* AddContactFeature.swift */,
 			);
 			path = Reducer;
+			sourceTree = "<group>";
+		};
+		AD736E782C07217F00793F09 /* Counter */ = {
+			isa = PBXGroup;
+			children = (
+				AD736E672C06BCE300793F09 /* CounterFeatureTests.swift */,
+				AD736E6D2C06F5DE00793F09 /* AppFeatureTests.swift */,
+			);
+			path = Counter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,6 +292,7 @@
 				AD736E612C06BCD200793F09 /* TCATestSampleTests.swift in Sources */,
 				AD736E682C06BCE300793F09 /* CounterFeatureTests.swift in Sources */,
 				AD736E6E2C06F5DE00793F09 /* AppFeatureTests.swift in Sources */,
+				AD736E7A2C07218F00793F09 /* ContactsFeatureTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
