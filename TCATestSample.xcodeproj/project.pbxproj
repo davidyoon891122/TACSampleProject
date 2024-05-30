@@ -20,6 +20,7 @@
 		AD736E732C06FAA400793F09 /* ContactsFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD736E722C06FAA400793F09 /* ContactsFeature.swift */; };
 		AD736E772C06FCEC00793F09 /* AddContactFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD736E762C06FCEC00793F09 /* AddContactFeature.swift */; };
 		AD736E7A2C07218F00793F09 /* ContactsFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD736E792C07218F00793F09 /* ContactsFeatureTests.swift */; };
+		AD736E7C2C07FCBB00793F09 /* ContactDetailFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD736E7B2C07FCBB00793F09 /* ContactDetailFeature.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		AD736E722C06FAA400793F09 /* ContactsFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsFeature.swift; sourceTree = "<group>"; };
 		AD736E762C06FCEC00793F09 /* AddContactFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactFeature.swift; sourceTree = "<group>"; };
 		AD736E792C07218F00793F09 /* ContactsFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsFeatureTests.swift; sourceTree = "<group>"; };
+		AD736E7B2C07FCBB00793F09 /* ContactDetailFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailFeature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 			children = (
 				AD736E722C06FAA400793F09 /* ContactsFeature.swift */,
 				AD736E762C06FCEC00793F09 /* AddContactFeature.swift */,
+				AD736E7B2C07FCBB00793F09 /* ContactDetailFeature.swift */,
 			);
 			path = Reducer;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				AD736E772C06FCEC00793F09 /* AddContactFeature.swift in Sources */,
 				AD736E6A2C06E61200793F09 /* NumberFactClient.swift in Sources */,
 				AD736E562C05C08200793F09 /* CounterFeature.swift in Sources */,
+				AD736E7C2C07FCBB00793F09 /* ContactDetailFeature.swift in Sources */,
 				AD736E3F2C05BCFF00793F09 /* TCATestSampleApp.swift in Sources */,
 				AD736E732C06FAA400793F09 /* ContactsFeature.swift in Sources */,
 			);
